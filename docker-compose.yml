@@ -1,0 +1,62 @@
+# ===========================================================================
+# DocuTrack AI — full local stack.
+#   db   : PostgreSQL (invoice storage)
+#   api  : FastAPI; on first start it generates sample docs + builds the index
+#   ui   : Streamlit chat front-end
+#
+# Usage:  docker compose up --build
+#   API  -> http://localhost:8000/docs
+#   UI   -> http://localhost:8501
+# Set GEMINI_API_KEY in your shell (or a .env) for real answers; otherwise set
+# LLM_PROVIDER=mock for an offline demo.
+# ===========================================================================
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: docutrack
+      POSTGRES_PASSWORD: docutrack
+      POSTGRES_DB: docutrack
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docutrack"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://docutrack:docutrack@db:5432/docutrack
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    ports:
+      - "8000:8000"
+    # Generate sample data + build the FAISS index on first boot, then serve.
+    command: >
+      sh -c "python -m scripts.bootstrap &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    volumes:
+      - index:/app/data
+
+  ui:
+    build: .
+    depends_on:
+      - api
+    environment:
+      API_BASE_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    command: >
+      streamlit run ui/streamlit_app.py
+      --server.address 0.0.0.0 --server.port 8501
+
+volumes:
+  pgdata:
+  index:

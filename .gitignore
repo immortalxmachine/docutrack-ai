@@ -16,7 +16,9 @@ env/
 
 # ---- Generated artifacts (reproducible, not committed) ----
 data/index/            # FAISS index + metadata, rebuilt by the ingestion pipeline
+data/*.db              # local SQLite database
 eval/results.json      # written by eval/run_eval.py
+install.log            # pip install transcript
 *.faiss
 *.pkl
 

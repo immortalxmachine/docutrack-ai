@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.github/
+data/index/
+data/docutrack.db
+eval/results.json
+install.log
+.pytest_cache/
+.ruff_cache/
+tests/
