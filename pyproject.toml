@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+exclude = [".venv", "data", "eval/results.json"]
+
+[tool.ruff.lint]
+# A pragmatic set: pyflakes (F), pycodestyle errors (E), isort (I), bugbear (B).
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]   # line length handled by the formatter, not enforced hard
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI's parameter markers are meant to be called in argument defaults.
+extend-immutable-calls = ["fastapi.File", "fastapi.Depends", "fastapi.Query"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
