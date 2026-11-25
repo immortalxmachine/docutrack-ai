@@ -1,0 +1,38 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Secrets ----
+.env
+
+# ---- Generated artifacts (reproducible, not committed) ----
+data/index/            # FAISS index + metadata, rebuilt by the ingestion pipeline
+eval/results.json      # written by eval/run_eval.py
+*.faiss
+*.pkl
+
+# ---- Model / HF caches ----
+.cache/
+models/
+
+# ---- Tooling ----
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

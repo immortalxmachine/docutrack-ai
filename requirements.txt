@@ -1,0 +1,42 @@
+# ===========================================================================
+# DocuTrack AI — Python dependencies (Python 3.11+)
+# Pinned to compatible minimum versions; kept deliberately small and readable.
+# ===========================================================================
+
+# --- Web API ---
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.32,<0.33
+python-multipart>=0.0.12        # file uploads for /extract-invoice
+
+# --- Config & validation ---
+pydantic>=2.9,<3
+pydantic-settings>=2.6,<3
+python-dotenv>=1.0,<2
+
+# --- Document loading & chunking ---
+pypdf>=5.1,<6
+langchain-text-splitters>=0.3,<0.4   # RecursiveCharacterTextSplitter
+
+# --- Embeddings & vector search ---
+sentence-transformers>=3.3,<4        # all-MiniLM-L6-v2 (pulls torch)
+faiss-cpu>=1.9,<2
+numpy>=1.26,<3
+
+# --- LLM providers ---
+google-generativeai>=0.8,<0.9        # Gemini free tier
+# Ollama is called over plain HTTP via `requests`, no SDK needed.
+requests>=2.32,<3
+
+# --- Database ---
+sqlalchemy>=2.0,<3
+psycopg[binary]>=3.2,<4              # PostgreSQL driver
+
+# --- PDF generation (synthetic sample documents) ---
+reportlab>=4.2,<5
+
+# --- UI ---
+streamlit>=1.40,<2
+
+# --- Tests ---
+pytest>=8.3,<9
+httpx>=0.27,<0.28                    # FastAPI TestClient dependency
