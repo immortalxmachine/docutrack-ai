@@ -1,0 +1,14 @@
+{
+  "title": "DocuTrack AI",
+  "tagline": "RAG assistant for shipping & customs documents",
+  "category": "GenAI",
+  "highlights": [
+    "Retrieval-augmented Q&A service (FastAPI, FAISS, sentence-transformers) over shipping & customs docs.",
+    "LLM invoice-extraction endpoint parsing commercial-invoice PDFs into structured fields.",
+    "Anti-hallucination confidence guard with a switchable LLM backend (Gemini)."
+  ],
+  "metrics": [],
+  "demo": null,
+  "featured": true,
+  "order": 3
+}
