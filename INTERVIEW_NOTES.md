@@ -101,10 +101,13 @@ the confidence guard is tested deterministically. `tests/test_api.py` uses
 FastAPI's `TestClient` with the mock provider. This keeps CI fast and free.
 
 ### 16. What exactly does the evaluation measure?
-`eval/run_eval.py` measures **retrieval** only (no LLM): for 30 questions with a
+`eval/run_eval.py` measures **retrieval** only (no LLM): for 28 questions with a
 known source document, it computes **hit-rate@3** and **hit-rate@5** — the
 fraction of questions whose correct document appears in the top-3 / top-5
-retrieved chunks. Deterministic and cheap to reproduce.
+retrieved chunks. Deterministic and cheap to reproduce. On the real corpus
+(1,842 chunks from 10 public-domain documents) it scores 96.4% (27/28); the one
+miss is a near-duplicate between the two Census export documents (FTR vs AES
+Quick Guide).
 
 ### 17. Why evaluate retrieval separately from generation?
 Most RAG failures are retrieval failures: if the right passage isn't retrieved,

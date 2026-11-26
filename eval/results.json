@@ -1,0 +1,321 @@
+{
+  "total_questions": 28,
+  "hit_rate_at_3": 0.9643,
+  "hit_rate_at_5": 0.9643,
+  "per_question": [
+    {
+      "id": 1,
+      "question": "Within how many days of a shipment's arrival at a U.S. port of entry must entry documents be filed?",
+      "expected_source": "cbp_importing_into_us.pdf",
+      "retrieved_top5": [
+        "cbp_importing_into_us.pdf",
+        "census_current_ftr.pdf",
+        "census_export_quickguide.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 2,
+      "question": "Which CBP form is the entry summary for imported merchandise?",
+      "expected_source": "cbp_importing_into_us.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf",
+        "cbp_importing_into_us.pdf",
+        "cbp_reasonable_care.pdf",
+        "cbp_icp_rulings_program.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 3,
+      "question": "Who may make entry for imported goods into the United States?",
+      "expected_source": "cbp_importing_into_us.pdf",
+      "retrieved_top5": [
+        "cbp_importing_into_us.pdf",
+        "cbp_icp_rulings_program.pdf",
+        "cbp_reasonable_care.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 4,
+      "question": "Who is responsible for using reasonable care to enter, classify, and value imported merchandise?",
+      "expected_source": "cbp_reasonable_care.pdf",
+      "retrieved_top5": [
+        "cbp_importing_into_us.pdf",
+        "cbp_reasonable_care.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 5,
+      "question": "What can happen if an importer of record fails to exercise reasonable care?",
+      "expected_source": "cbp_reasonable_care.pdf",
+      "retrieved_top5": [
+        "cbp_reasonable_care.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 6,
+      "question": "How can I request a binding prospective ruling from CBP?",
+      "expected_source": "cbp_icp_rulings_program.pdf",
+      "retrieved_top5": [
+        "cbp_icp_rulings_program.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 7,
+      "question": "Which CBP division issues prospective commodity classification rulings?",
+      "expected_source": "cbp_icp_rulings_program.pdf",
+      "retrieved_top5": [
+        "cbp_icp_rulings_program.pdf",
+        "cbp_reasonable_care.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 8,
+      "question": "Where are CBP prospective rulings published and searchable online?",
+      "expected_source": "cbp_icp_rulings_program.pdf",
+      "retrieved_top5": [
+        "cbp_icp_rulings_program.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 9,
+      "question": "Where on a knit garment must a country-of-origin fabric label be placed?",
+      "expected_source": "cbp_icp_apparel_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_apparel_marking.pdf",
+        "cfr_title19_marking_part134.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 10,
+      "question": "Which federal acts govern fiber content labeling for wearing apparel?",
+      "expected_source": "cbp_icp_apparel_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_apparel_marking.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 11,
+      "question": "How should a reversible garment be marked for country of origin?",
+      "expected_source": "cbp_icp_apparel_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_apparel_marking.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 12,
+      "question": "Who is the ultimate purchaser for country-of-origin marking purposes?",
+      "expected_source": "cbp_icp_country_of_origin_marking.pdf",
+      "retrieved_top5": [
+        "cfr_title19_marking_part134.pdf",
+        "cbp_icp_country_of_origin_marking.pdf",
+        "cbp_icp_apparel_marking.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 13,
+      "question": "When may the phrase 'assembled in' be used to indicate country of origin?",
+      "expected_source": "cbp_icp_country_of_origin_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_country_of_origin_marking.pdf",
+        "cfr_title19_marking_part134.pdf",
+        "cbp_icp_apparel_marking.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 14,
+      "question": "Are 'E.U.' and 'E.C.' acceptable abbreviations for country of origin marking?",
+      "expected_source": "cbp_icp_country_of_origin_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_country_of_origin_marking.pdf",
+        "cfr_title19_marking_part134.pdf",
+        "cbp_icp_apparel_marking.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 15,
+      "question": "What is a substantial transformation and how can it change an article's country of origin?",
+      "expected_source": "cbp_icp_country_of_origin_marking.pdf",
+      "retrieved_top5": [
+        "cbp_icp_country_of_origin_marking.pdf",
+        "cbp_importing_into_us.pdf",
+        "cfr_title19_marking_part134.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 16,
+      "question": "What should the product description on an e-commerce shipment include so the package clears CBP on time?",
+      "expected_source": "cbp_ecommerce_guide.pdf",
+      "retrieved_top5": [
+        "cbp_importing_into_us.pdf",
+        "cbp_ecommerce_guide.pdf",
+        "cbp_reasonable_care.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 17,
+      "question": "How should the gross weight of an e-commerce package be reported?",
+      "expected_source": "cbp_ecommerce_guide.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf",
+        "cbp_ecommerce_guide.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 18,
+      "question": "Which section of the Foreign Trade Regulations covers confidentiality of Electronic Export Information?",
+      "expected_source": "census_current_ftr.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf",
+        "census_export_quickguide.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 19,
+      "question": "What are AES filing citation, exemption and exclusion legends used for under the Foreign Trade Regulations?",
+      "expected_source": "census_current_ftr.pdf",
+      "retrieved_top5": [
+        "census_export_quickguide.pdf",
+        "census_current_ftr.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 20,
+      "question": "What are the data elements required for Electronic Export Information under 15 CFR Part 30?",
+      "expected_source": "census_current_ftr.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf",
+        "census_export_quickguide.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 21,
+      "question": "Who is allowed to file in the Automated Export System (AES)?",
+      "expected_source": "census_export_quickguide.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf",
+        "census_export_quickguide.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 22,
+      "question": "What is Schedule B used for when exporting commodities from the United States?",
+      "expected_source": "census_export_quickguide.pdf",
+      "retrieved_top5": [
+        "census_export_quickguide.pdf",
+        "census_current_ftr.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 23,
+      "question": "What electronic filing replaced the paper Shipper's Export Declaration?",
+      "expected_source": "census_export_quickguide.pdf",
+      "retrieved_top5": [
+        "census_current_ftr.pdf"
+      ],
+      "hit@3": false,
+      "hit@5": false
+    },
+    {
+      "id": 24,
+      "question": "Within how many days must a detailed hazardous materials incident report be submitted to PHMSA?",
+      "expected_source": "cfr_title49_hazmat_general.pdf",
+      "retrieved_top5": [
+        "cfr_title49_hazmat_general.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 25,
+      "question": "Within how many hours must telephone notice of a hazardous materials incident be given to the National Response Center?",
+      "expected_source": "cfr_title49_hazmat_general.pdf",
+      "retrieved_top5": [
+        "cfr_title49_hazmat_general.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 26,
+      "question": "Which subchapter of 49 CFR contains the Hazardous Materials Regulations?",
+      "expected_source": "cfr_title49_hazmat_general.pdf",
+      "retrieved_top5": [
+        "cfr_title49_hazmat_general.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 27,
+      "question": "Under 19 CFR Part 134, when are additional marking duties assessed on imported articles?",
+      "expected_source": "cfr_title19_marking_part134.pdf",
+      "retrieved_top5": [
+        "cfr_title19_marking_part134.pdf",
+        "cbp_icp_country_of_origin_marking.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    },
+    {
+      "id": 28,
+      "question": "What does 19 CFR Part 134 require about the manner of country-of-origin marking on imported articles?",
+      "expected_source": "cfr_title19_marking_part134.pdf",
+      "retrieved_top5": [
+        "cfr_title19_marking_part134.pdf",
+        "cbp_icp_country_of_origin_marking.pdf",
+        "cbp_importing_into_us.pdf"
+      ],
+      "hit@3": true,
+      "hit@5": true
+    }
+  ]
+}

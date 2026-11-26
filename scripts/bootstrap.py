@@ -17,8 +17,8 @@ def main() -> None:
     settings = get_settings()
 
     if not glob.glob(os.path.join(settings.docs_dir, "*.pdf")):
-        from scripts.generate_docs import main as gen_docs
-        gen_docs()
+        from scripts.fetch_docs import main as fetch_docs
+        fetch_docs()
     else:
         print(f"[bootstrap] docs already present in {settings.docs_dir}/")
 

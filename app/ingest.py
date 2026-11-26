@@ -54,7 +54,7 @@ def _chunk_documents(docs_dir: str, chunk_size: int, overlap: int) -> list[dict]
     pdf_paths = sorted(glob.glob(os.path.join(docs_dir, "*.pdf")))
     if not pdf_paths:
         raise FileNotFoundError(
-            f"No PDFs in '{docs_dir}'. Run: python -m scripts.generate_docs"
+            f"No PDFs in '{docs_dir}'. Run: python -m scripts.fetch_docs"
         )
     for path in pdf_paths:
         fname = os.path.basename(path)
