@@ -8,8 +8,9 @@
     "Anti-hallucination confidence guard with a switchable LLM backend (Gemini/Ollama/mock)."
   ],
   "metrics": [
-    "96.4% retrieval hit-rate@3 over 28 eval questions (1,842 chunks)",
-    "15 automated tests, ruff + pytest CI"
+    { "label": "Retrieval hit-rate@3", "value": "96.4%" },
+    { "label": "Indexed chunks", "value": "1,842" },
+    { "label": "Automated tests", "value": "15" }
   ],
   "demo": null,
   "featured": true,
